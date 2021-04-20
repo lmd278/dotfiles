@@ -163,3 +163,12 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" Format selected range, would work in both visual mode and normal mode,
+" when used in normal mode, the selection works on the motion object.
+vmap <leader>p  <Plug>(coc-format-selected)
+nmap <leader>p  <Plug>(coc-format-selected)
+
+" Mappings for coc-explorer
+nnoremap <leader>e :CocCommand explorer<CR>
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
