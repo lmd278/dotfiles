@@ -20,8 +20,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " Status Line
   Plug 'vim-airline/vim-airline'
-  " Cool Icons
-  Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
