@@ -20,7 +20,7 @@ let g:airline_right_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " We don't need to see things like -- INSERT -- anymore
 set noshowmode
