@@ -1,2 +1,2 @@
-nnoremap <C-/> :Commentary<CR>
-vnoremap <C-/> :Commentary<CR>
+nnoremap <C-_> :Commentary<CR>
+vnoremap <C-_> :Commentary<CR>
