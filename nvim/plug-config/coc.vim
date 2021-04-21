@@ -1,3 +1,7 @@
+" ============================================================================ "
+" ===                          Default settings                            === "
+" ============================================================================ "
+
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
 set encoding=utf-8
@@ -164,10 +168,9 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" Format selected range, would work in both visual mode and normal mode,
-" when used in normal mode, the selection works on the motion object.
-vmap <leader>p  <Plug>(coc-format-selected)
-nmap <leader>p  <Plug>(coc-format-selected)
+" ============================================================================ "
+" ===                          Custom settings                             === "
+" ============================================================================ "
 
 " Mappings for coc-explorer
 nnoremap <leader>e :CocCommand explorer<CR>
