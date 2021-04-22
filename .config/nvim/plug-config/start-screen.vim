@@ -1,4 +1,4 @@
-" This header was generated using Larry 3D font
+" Larry 3D font
 let g:startify_custom_header = [
         \ '                                  __                ',
         \ '     ___      __    ___   __  __ /\_\    ___ ___    ',
