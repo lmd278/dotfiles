@@ -33,6 +33,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Add some color
   Plug 'norcalli/nvim-colorizer.lua'
   Plug 'junegunn/rainbow_parentheses.vim'
+  " Start Screen
+  Plug 'mhinz/vim-startify'
 
 call plug#end()
 
