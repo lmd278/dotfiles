@@ -178,9 +178,7 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | end
 
 " Fix coc-lua
 if empty(glob('~/.config/nvim/lua-language-server'))
-  !cd ~/.config/nvim
-  !wget https://github.com/josa42/coc-lua-binaries/releases/download/latest/lua-language-server-linux.tar.gz
-  !tar -xvzf *.gz
-  !rm *.gz
-  !cd -
+  !wget -P ~/.config/nvim https://github.com/josa42/coc-lua-binaries/releases/download/latest/lua-language-server-linux.tar.gz
+  !tar -xvzf ~/.config/nvim/*.gz -C ~/.config/nvim
+  !rm ~/.config/nvim/*.gz
 endif
