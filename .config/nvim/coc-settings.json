@@ -4,10 +4,6 @@
   "python.linting.pylintEnabled": true,
   "python.jediEnabled": false,
 
-  // Lua config
-  "Lua.workspace.maxPreload": 5000,
-  "Lua.workspace.preloadFileSize": 5000,
-
   // Explorer config
   "explorer.width": 30,
   "explorer.previewAction.onHover": false,
