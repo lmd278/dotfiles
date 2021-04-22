@@ -5,8 +5,8 @@
   "python.jediEnabled": false,
 
   // Lua config
-  "Lua.workspace.maxPreload": 2000,
-  "Lua.workspace.preloadFileSize": 2000,
+  "Lua.workspace.maxPreload": 5000,
+  "Lua.workspace.preloadFileSize": 5000,
 
   // Explorer config
   "explorer.width": 30,
