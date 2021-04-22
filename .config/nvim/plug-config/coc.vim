@@ -175,10 +175,3 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " Mappings for coc-explorer
 nnoremap <leader>e :CocCommand explorer<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-
-" Fix coc-lua
-if empty(glob('~/.config/nvim/lua-language-server'))
-  !wget -P ~/.config/nvim https://github.com/josa42/coc-lua-binaries/releases/download/latest/lua-language-server-linux.tar.gz
-  !tar -xvzf ~/.config/nvim/*.gz -C ~/.config/nvim
-  !rm ~/.config/nvim/*.gz
-endif
