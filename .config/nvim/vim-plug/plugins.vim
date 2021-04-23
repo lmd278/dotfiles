@@ -6,7 +6,7 @@ endif
 
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-      \| PlugInstall --sync | source $MYVIMRC
+      \| PlugInstall --sync | q
       \| endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
@@ -45,5 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'junegunn/gv.vim'
   " Text Navigation
   Plug 'easymotion/vim-easymotion'
+  " Snippets
+  Plug 'honza/vim-snippets'
 
 call plug#end()
