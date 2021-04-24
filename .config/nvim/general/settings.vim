@@ -1,3 +1,7 @@
+" ============================================================================ "
+" ===                        Recommended Settings                          === "
+" ============================================================================ "
+
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set formatoptions-=cro                  " Stop newline continution of comments
 
@@ -41,3 +45,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+" ============================================================================ "
+" ===                          Custom Settings                             === "
+" ============================================================================ "
+
+set scrolloff=5
