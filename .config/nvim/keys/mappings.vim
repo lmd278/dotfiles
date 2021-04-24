@@ -15,10 +15,8 @@ inoremap <expr> <C-k> ("\<C-p>")
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
-tnoremap <TAB> <C-\><C-n>:bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
-tnoremap <S-TAB> <C-\><C-n>:bprevious<CR>
 
 " Better indenting
 vnoremap < <gv
