@@ -45,6 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'junegunn/gv.vim'
   " Text Navigation
   Plug 'easymotion/vim-easymotion'
+  Plug 'unblevable/quick-scope'
   " Snippets
   Plug 'honza/vim-snippets'
 

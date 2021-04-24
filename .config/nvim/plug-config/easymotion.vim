@@ -1,6 +1,6 @@
-" Super f
-map f <Plug>(easymotion-bd-f2)
-nmap f <Plug>(easymotion-overwin-f2)
+" Super s
+map s <Plug>(easymotion-bd-f2)
+nmap s <Plug>(easymotion-overwin-f2)
 
 " Normal motions
 map <leader><leader>j <Plug>(easymotion-bd-line)

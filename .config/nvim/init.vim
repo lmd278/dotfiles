@@ -11,4 +11,5 @@ source $HOME/.config/nvim/plug-config/commentary.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
+source $HOME/.config/nvim/plug-config/quickscope.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
