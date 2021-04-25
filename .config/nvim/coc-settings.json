@@ -1,12 +1,14 @@
 {
-  // Python config
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.jediEnabled": false,
+    "coc.preferences.formatOnSaveFiletypes": ["*"],
 
-  // Explorer config
-  "explorer.width": 30,
-  "explorer.previewAction.onHover": false,
-  "explorer.icon.enableNerdfont": true,
-  "explorer.file.showHiddenFiles": true
+    // Python config
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.jediEnabled": false,
+
+    // Explorer config
+    "explorer.width": 30,
+    "explorer.previewAction.onHover": false,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.file.showHiddenFiles": true
 }

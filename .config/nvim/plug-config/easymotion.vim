@@ -11,6 +11,6 @@ map <leader><leader>/ <Plug>(easymotion-sn)
 nmap <leader><leader>j <Plug>(easymotion-overwin-line)
 nmap <leader><leader>k <Plug>(easymotion-overwin-line)
 
-" Fix vim-easymotion and coc conflict
+" Resolve conflict between easymotion and coc
 autocmd User EasyMotionPromptBegin silent! CocDisable
 autocmd User EasyMotionPromptEnd silent! CocEnable

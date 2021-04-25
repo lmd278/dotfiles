@@ -6,10 +6,7 @@ nnoremap <Space> <Nop>
 inoremap jk <Esc>
 inoremap kj <Esc>
 
-" <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-
-" Better nav for omnicomplete
+" Move up and down in autocomplete
 inoremap <expr> <C-j> ("\<C-n>")
 inoremap <expr> <C-k> ("\<C-p>")
 
