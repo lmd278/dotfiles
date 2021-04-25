@@ -52,6 +52,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Text Navigation
     Plug 'easymotion/vim-easymotion'
     Plug 'unblevable/quick-scope'
+    " Terminal
+    Plug 'voldikss/vim-floaterm'
     " Snippets
     Plug 'honza/vim-snippets'
   endif

@@ -21,5 +21,6 @@ else
   source $HOME/.config/nvim/plug-config/startify.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
   source $HOME/.config/nvim/plug-config/quick-scope.vim
+  source $HOME/.config/nvim/plug-config/floaterm.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 endif

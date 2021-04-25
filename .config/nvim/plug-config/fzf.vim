@@ -35,7 +35,7 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 " ===                          Custom settings                             === "
 " ============================================================================ "
 
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Todo', 'border': 'sharp' } }
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8, 'highlight': 'Todo', 'border': 'sharp' } }
 
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
 
