@@ -10,11 +10,6 @@ inoremap kj <Esc>
 inoremap <expr> <C-j> ("\<C-n>")
 inoremap <expr> <C-k> ("\<C-p>")
 
-" TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
-
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
@@ -22,6 +17,11 @@ vnoremap > >gv
 " Move selected line / block of text in visual mode
 xnoremap K :move '<-2<CR>gv=gv
 xnoremap J :move '>+1<CR>gv=gv
+
+" TAB in general mode will move to text buffer
+nnoremap <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+nnoremap <S-TAB> :bprevious<CR>
 
 " Better window navigation
 nnoremap <C-h> <C-w>h

@@ -1,0 +1,163 @@
+[
+    {
+        "command": "vscode-neovim.compositeEscape1",
+        "key": "j",
+        "when": "neovim.mode == insert && editorTextFocus",
+        "args": "j"
+    },
+    {
+        "command": "vscode-neovim.compositeEscape2",
+        "key": "k",
+        "when": "neovim.mode == insert && editorTextFocus",
+        "args": "k"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookeditorFocus && !editorTextFocused"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp",
+        "when": "panelFocus"
+    },
+    {
+        "command": "list.focusDown",
+        "key": "ctrl+j",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "command": "list.focusUp",
+        "key": "ctrl+k",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "command": "showNextParameterHint",
+        "key": "ctrl+j",
+        "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "command": "showPrevParameterHint",
+        "key": "ctrl+k",
+        "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "textInputFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "textInputFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "command": "workbench.action.quickOpenSelectNext",
+        "key": "ctrl+j",
+        "when": "inQuickOpen"
+    },
+    {
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "key": "ctrl+k",
+        "when": "inQuickOpen"
+    },
+    {
+        "command": "vscode-neovim.history-down-cmdline",
+        "key": "ctrl+j",
+        "when": "neovim.mode == cmdline_normal"
+    },
+    {
+        "command": "vscode-neovim.history-up-cmdline",
+        "key": "ctrl+k",
+        "when": "neovim.mode == cmdline_normal"
+    },
+    {
+        "command": "list.focusDown",
+        "key": "tab",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "command": "list.focusUp",
+        "key": "shift+tab",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "command": "showNextParameterHint",
+        "key": "tab",
+        "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "command": "showPrevParameterHint",
+        "key": "shift+tab",
+        "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "textInputFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "textInputFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "command": "workbench.action.quickOpenSelectNext",
+        "key": "tab",
+        "when": "inQuickOpen"
+    },
+    {
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "key": "shift+tab",
+        "when": "inQuickOpen"
+    },
+    {
+        "command": "vscode-neovim.history-down-cmdline",
+        "key": "tab",
+        "when": "neovim.mode == cmdline_normal"
+    },
+    {
+        "command": "vscode-neovim.history-up-cmdline",
+        "key": "shift+tab",
+        "when": "neovim.mode == cmdline_normal"
+    },
+    {
+        "key": "ctrl+k ctrl+i",
+        "command": "editor.debug.action.showDebugHover",
+        "when": "editorTextFocus && inDebugMode && neovim.mode != 'insert'"
+    },
+    {
+        "key": "ctrl+k ctrl+i",
+        "command": "-editor.debug.action.showDebugHover",
+        "when": "editorTextFocus && inDebugMode"
+    },
+    {
+        "key": "ctrl+k ctrl+i",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus && neovim.mode != 'insert'"
+    },
+    {
+        "key": "ctrl+k ctrl+i",
+        "command": "-editor.action.showHover",
+        "when": "editorTextFocus"
+    }
+]

@@ -2,7 +2,9 @@ if exists('g:vscode')
     " VS Code extension
     source $HOME/.config/nvim/vim-plug/plugins.vim
     source $HOME/.config/nvim/general/settings.vim
+    " $HOME/.config/nvim/vscode/settings.json
     source $HOME/.config/nvim/vscode/mappings.vim
+    " $HOME/.config/nvim/vscode/keybindings.json
     source $HOME/.config/nvim/vscode/easymotion.vim
     source $HOME/.config/nvim/plug-config/quick-scope.vim
 else
