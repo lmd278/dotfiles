@@ -172,6 +172,22 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " ===                          Custom settings                             === "
 " ============================================================================ "
 
+" Install the missing extensions
+let g:coc_global_extensions = [
+            \ 'coc-marketplace',
+            \ 'coc-explorer',
+            \ 'coc-html',
+            \ 'coc-css',
+            \ 'coc-tsserver',
+            \ 'coc-python',
+            \ 'coc-java',
+            \ 'coc-clangd',
+            \ 'coc-lua',
+            \ 'coc-json',
+            \ 'coc-vimlsp',
+            \ 'coc-snippets'
+            \ ]
+
 " Mappings for coc-explorer
 nnoremap <leader>e :CocCommand explorer<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
