@@ -45,6 +45,9 @@ xnoremap <C-h> <Cmd>call VSCodeNotify('workbench.action.navigateLeft')<CR>
 nnoremap <C-l> <Cmd>call VSCodeNotify('workbench.action.navigateRight')<CR>
 xnoremap <C-l> <Cmd>call VSCodeNotify('workbench.action.navigateRight')<CR>
 
+" No highlight
+nnoremap <leader>n :let @/ = ""<CR>
+
 " Quick commentary
 xnoremap <expr> <leader>/ <SID>vscodeCommentary()
 nnoremap <expr> <leader>/ <SID>vscodeCommentary() . '_'
