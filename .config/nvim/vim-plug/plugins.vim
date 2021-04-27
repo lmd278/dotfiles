@@ -16,6 +16,8 @@ if exists('g:vscode')
     " Plug 'asvetliakov/vim-easymotion'
     Plug 'ChristianChiarulli/vscode-easymotion'
     Plug 'unblevable/quick-scope'
+    " Make the yanked region apparent
+    Plug 'machakann/vim-highlightedyank'
 else
     " Better syntax support
     Plug 'sheerun/vim-polyglot'
@@ -58,6 +60,8 @@ else
     Plug 'honza/vim-snippets'
     " Undo history visualizer
     Plug 'mbbill/undotree'
+    " Make the yanked region apparent
+    Plug 'machakann/vim-highlightedyank'
 endif
 
 call plug#end()

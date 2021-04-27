@@ -2,5 +2,18 @@
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
     "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
     "code-runner.runInTerminal": true,
-    "editor.lineNumbers": "relative"
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Nord Deep",
+    "workbench.colorCustomizations": {
+        "[Nord Deep]": {
+            "editor.selectionBackground": "#5e81ac"
+        }
+    },
+    "bracket-pair-colorizer-2.colors": [
+        "terminal.ansiBrightMagenta",
+        "terminal.ansiYellow",
+        "terminal.ansiBrightCyan"
+    ],
+    "editor.fontFamily": "'FiraCode Nerd Font'",
+    "editor.fontLigatures": true
 }

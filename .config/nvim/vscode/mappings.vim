@@ -27,10 +27,6 @@ endfunction
 vnoremap < <gv
 vnoremap > >gv
 
-" Move selected line / block of text in visual mode
-xnoremap K :move '<-2<CR>gv=gv
-xnoremap J :move '>+1<CR>gv=gv
-
 " Simulate same TAB behavior in VSCode
 nmap <Tab> :Tabnext<CR>
 nmap <S-Tab> :Tabprev<CR>
