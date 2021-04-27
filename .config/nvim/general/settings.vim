@@ -37,5 +37,8 @@ set noswapfile
 set textwidth=80
 set colorcolumn=+1
 
+" Stop new line continuation of comments
+au FileType * set fo-=c fo-=r fo-=o
+
 " You can't stop me
 cmap w!! w !sudo tee %
