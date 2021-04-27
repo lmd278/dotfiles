@@ -1,5 +1,6 @@
 {
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
     "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "editor.lineNumbers": "relative"
 }
