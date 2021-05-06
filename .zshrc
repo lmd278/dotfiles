@@ -113,7 +113,5 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 
-if (($+commands[bat])); then
-    export BAT_THEME='Nord'
-    alias cat='bat'
-fi
+# Colorscheme generator
+# (cat $HOME/.config/wpg/sequences &)
