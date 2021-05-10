@@ -179,3 +179,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+exec --no-startup-id ibus-daemon -drx
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
