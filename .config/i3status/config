@@ -35,8 +35,8 @@ cpu_temperature 0 {
 }
 
 cpu_usage {
-	format = " <span font_desc='Feather'></span> %usage "
-	max_threshold = 75
+    format = " <span font_desc='Feather'></span> %usage "
+    max_threshold = 75
 }
 
 memory {
