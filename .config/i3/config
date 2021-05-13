@@ -266,38 +266,37 @@ mode "resize" {
 # Swap windows
 bindsym $mod+Shift+i mark --add "swapee"; mode "swap"
 mode "swap" {
-	# Switch to workspace
-	bindsym $mod+1 workspace $ws1
-	bindsym $mod+2 workspace $ws2
-	bindsym $mod+3 workspace $ws3
-	bindsym $mod+4 workspace $ws4
-	bindsym $mod+5 workspace $ws5
-	bindsym $mod+6 workspace $ws6
-	bindsym $mod+7 workspace $ws7
-	bindsym $mod+8 workspace $ws8
+    # Switch to workspace
+    bindsym $mod+1 workspace $ws1
+    bindsym $mod+2 workspace $ws2
+    bindsym $mod+3 workspace $ws3
+    bindsym $mod+4 workspace $ws4
+    bindsym $mod+5 workspace $ws5
+    bindsym $mod+6 workspace $ws6
+    bindsym $mod+7 workspace $ws7
+    bindsym $mod+8 workspace $ws8
 
-	# Change focus
+    # Change focus
     bindsym $mod+h focus left
     bindsym $mod+j focus down
     bindsym $mod+k focus up
     bindsym $mod+l focus right
-	bindsym $mod+Left focus left
-	bindsym $mod+Down focus down
-	bindsym $mod+Up focus up
-	bindsym $mod+Right focus right
-
-	# Change focus (without mod)
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+    
+    # Change focus (without mod)
     bindsym h focus left
     bindsym j focus down
     bindsym k focus up
     bindsym l focus right
-	bindsym Left focus left
-	bindsym Down focus down
-	bindsym Up focus up
-	bindsym Right focus right
-
-	bindsym Return swap container with mark "swapee"; unmark "swapee"; mode "default";
-	bindsym Escape unmark "swapee"; mode "default";
+    bindsym Left focus left
+    bindsym Down focus down
+    bindsym Up focus up
+    bindsym Right focus right
+    bindsym Return swap container with mark "swapee"; unmark "swapee"; mode "default";
+    bindsym Escape unmark "swapee"; mode "default";
 }
 
 # Autostart applications
@@ -350,18 +349,18 @@ bar {
         background $text-color
         statusline $inactive-text-color
         separator $bg-color
-		#                  border             background         text
+        #                  border             background         text
         focused_workspace  $bg-color          $bg-color          $text-color
         inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $inactive-text-color
-	}
+        urgent_workspace   $urgent-bg-color   $urgent-bg-color   $inactive-text-color
+    }
 }
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
 # Color aliases
-set $bg-color 	         #88C0D0
+set $bg-color            #88C0D0
 set $text-color          #2E3440
 set $inactive-bg-color   #2E3440
 set $inactive-text-color #ECEFF4
