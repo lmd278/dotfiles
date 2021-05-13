@@ -104,8 +104,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Enable apt package suggestions
 source /etc/zsh_command_not_found
 
+# Enable fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Setting rg as the default source for fzf
@@ -113,5 +115,5 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 
-# Colorscheme generator
-# (cat $HOME/.config/wpg/sequences &)
+# Shell completions for Alacritty
+fpath+=${ZDOTDIR:-~}/.zsh_functions

@@ -2,6 +2,10 @@
 # ===                           General settings                           === #
 # ============================================================================ #
 
+# Basic Definitions
+set $terminal --no-startup-id alacritty
+set $browser --no-startup-id brave-browser
+
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
@@ -24,23 +28,27 @@ bindsym $mod+n border normal
 # is used in the bar {} block below.
 font pango:Ubuntu Regular 11
 
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+# font pango:DejaVu Sans Mono 8
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# set $refresh_i3status killall -SIGUSR1 i3status
+# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+# bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -58,6 +66,18 @@ bindsym $mod+d exec --no-startup-id dmenu_run -i -fn "Ubuntu" -nb "#2E3440" -nf 
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+################################################################################################
+## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
+################################################################################################
+
+exec --no-startup-id volumeicon
+bindsym $mod+Ctrl+m exec $terminal -e 'alsamixer'
+#exec --no-startup-id pulseaudio
+#exec --no-startup-id pa-applet
+#bindsym $mod+Ctrl+m exec pavucontrol
+
+################################################################################################
+
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 10; notify-send 'brightness down'"
@@ -66,9 +86,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run -i -fn "Ubuntu" -nb "#2E3440" -nf 
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec --no-startup-id "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym Print exec --no-startup-id $HOME/.config/i3/scripts/i3-scrot
+bindsym $mod+Print --release exec --no-startup-id $HOME/.config/i3/scripts/i3-scrot -w
+bindsym $mod+Shift+Print --release exec --no-startup-id $HOME/.config/i3/scripts/i3-scrot -s
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Focus_follows_mouse no
@@ -86,16 +106,16 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # Move focused window
-bindsym $mod+Shift+h move left 20
-bindsym $mod+Shift+j move down 20
-bindsym $mod+Shift+k move up 20
-bindsym $mod+Shift+l move right 20
+bindsym $mod+Shift+h move left 25
+bindsym $mod+Shift+j move down 25
+bindsym $mod+Shift+k move up 25
+bindsym $mod+Shift+l move right 25
 
 # Alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left 20
-bindsym $mod+Shift+Down move down 20
-bindsym $mod+Shift+Up move up 20
-bindsym $mod+Shift+Right move right 20
+bindsym $mod+Shift+Left move left 25
+bindsym $mod+Shift+Down move down 25
+bindsym $mod+Shift+Up move up 25
+bindsym $mod+Shift+Right move right 25
 
 # Workspace back and forth (with/without active container)
 # workspace_auto_back_and_forth yes
@@ -257,20 +277,20 @@ mode "swap" {
 	bindsym $mod+8 workspace $ws8
 
 	# Change focus
-        bindsym $mod+h focus left
-        bindsym $mod+j focus down
-        bindsym $mod+k focus up
-        bindsym $mod+l focus right
+    bindsym $mod+h focus left
+    bindsym $mod+j focus down
+    bindsym $mod+k focus up
+    bindsym $mod+l focus right
 	bindsym $mod+Left focus left
 	bindsym $mod+Down focus down
 	bindsym $mod+Up focus up
 	bindsym $mod+Right focus right
 
 	# Change focus (without mod)
-        bindsym h focus left
-        bindsym j focus down
-        bindsym k focus up
-        bindsym l focus right
+    bindsym h focus left
+    bindsym j focus down
+    bindsym k focus up
+    bindsym l focus right
 	bindsym Left focus left
 	bindsym Down focus down
 	bindsym Up focus up
@@ -285,6 +305,9 @@ mode "swap" {
 # exec_always --no-startup-id {{...}}
 exec --no-startup-id ibus-daemon -drx
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id xautolock -time 10 -locker blurlock
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -320,6 +343,7 @@ set_from_resource $term_color15    color15
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+    i3bar_command i3bar
     status_command i3status
     position top
     colors {
@@ -327,11 +351,14 @@ bar {
         statusline $inactive-text-color
         separator $bg-color
 		#                  border             background         text
-                focused_workspace  $bg-color          $bg-color          $text-color
-                inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+        focused_workspace  $bg-color          $bg-color          $text-color
+        inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $inactive-text-color
 	}
 }
+
+# hide/unhide i3status bar
+bindsym $mod+m bar mode toggle
 
 # Color aliases
 set $bg-color 	         #88C0D0
@@ -375,32 +402,32 @@ set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    bindsym o      mode "$mode_gaps_outer"
+    bindsym i      mode "$mode_gaps_inner"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
+    bindsym plus  gaps inner current plus 5
+    bindsym minus gaps inner current minus 5
+    bindsym 0     gaps inner current set 0
 
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set 0
+    bindsym Shift+plus  gaps inner all plus 5
+    bindsym Shift+minus gaps inner all minus 5
+    bindsym Shift+0     gaps inner all set 0
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
+    bindsym plus  gaps outer current plus 5
+    bindsym minus gaps outer current minus 5
+    bindsym 0     gaps outer current set 0
 
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
-        bindsym Shift+0     gaps outer all set 0
+    bindsym Shift+plus  gaps outer all plus 5
+    bindsym Shift+minus gaps outer all minus 5
+    bindsym Shift+0     gaps outer all set 0
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }

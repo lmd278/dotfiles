@@ -12,11 +12,11 @@ order += "load"
 order += "cpu_temperature 0"
 order += "cpu_usage"
 order += "memory"
-order += "disk /"
-order += "disk /home"
-order += "ethernet enp2s0"
-order += "wireless wlp3s0"
-order += "volume master"
+# order += "disk /"
+# order += "disk /home"
+order += "ethernet _first_"
+order += "wireless _first_"
+# order += "volume master"
 order += "battery all"
 order += "tztime local"
 
@@ -25,11 +25,11 @@ order += "tztime local"
 # <span font_desc='Font Awesome 5 Free'></span>
 
 load {
-    format = " <span font_desc='Feather'> </span> %15min Load "
+    format = " <span font_desc='Feather'></span> %15min Load"
 }
 
 cpu_temperature 0 {
-    format = " <span font_desc='Feather' ></span> %degrees °C "
+    format = " <span font_desc='Feather'></span> %degrees °C "
     path = "/sys/class/thermal/thermal_zone6/temp"
     max_threshold = 75
 }
@@ -40,9 +40,10 @@ cpu_usage {
 }
 
 memory {
-        format = " <span font_desc='Font Awesome 5 Free'></span> %used "
-        threshold_degraded = 10%
-        threshold_critical = 5%
+    # format = " <span font_desc='Feather'></span> %used "
+    format = " <span font_desc='Feather'></span> %percentage_used "
+    threshold_degraded = 10%
+    threshold_critical = 5%
 }
 
 disk "/" {
@@ -50,17 +51,19 @@ disk "/" {
 }
 
 disk "/home" {
-    format = " <span font_desc='Feather'></span> %avail Left "
+    format = " <span font_desc='Feather'></span> %avail Left "
 }
 
-ethernet enp2s0 {
-    format_up = " <span font_desc='Font Awesome 5 Free'></span> %ip "
-    format_down = " <span font_desc='Font Awesome 5 Free'></span> Disconnected "
+ethernet _first_ {
+    format_up = " <span font_desc='Font Awesome 5 Free'></span> %ip (%speed) "
+    format_down = " <span font_desc='Font Awesome 5 Free'></span> None "
 }
 
-wireless wlp3s0 {
-    format_up = " <span font_desc='Feather'></span> %essid "
-    format_down = " <span font_desc='Feather'></span> Disconnected "
+wireless _first_ {
+    # format_up = " <span font_desc='Feather'></span> (%quality at %essid, %bitrate / %frequency) %ip "
+    format_up = " <span font_desc='Feather'></span> %quality at %essid "
+    # format_up = " <span font_desc='Feather'></span> %essid "
+    format_down = " <span font_desc='Feather'></span> None "
 }
 
 volume master {
@@ -72,9 +75,11 @@ volume master {
 }
 
 battery all {
-    last_full_capacity = true
+    # format = " <span font_desc='Feather'></span> %status %remaining (%emptytime %consumption)"
     format = " <span font_desc='Feather'></span> %status %percentage %remaining"
-    low_threshold = 10
+    last_full_capacity = true
+    threshold_type = percentage
+    low_threshold = 20
 }
 
 tztime local {
