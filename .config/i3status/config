@@ -25,7 +25,7 @@ order += "tztime local"
 # <span font_desc='Font Awesome 5 Free'></span>
 
 load {
-    format = " <span font_desc='Feather'></span> %15min Load"
+    format = " <span font_desc='Feather'></span> %15min Load "
 }
 
 cpu_temperature 0 {
