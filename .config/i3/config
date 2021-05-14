@@ -235,7 +235,7 @@ mode "$mode_system" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id $HOME/.config/i3/scripts/blurlock
+bindsym $mod+9 exec --no-startup-id $HOME/.config/i3/scripts/i3lock-color
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
@@ -352,6 +352,7 @@ bar {
         #                  border             background         text
         focused_workspace  $bg-color          $bg-color          $text-color
         inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+        binding_mode       $indicator-color   $indicator-color   $text-color
         urgent_workspace   $urgent-bg-color   $urgent-bg-color   $inactive-text-color
     }
 }
