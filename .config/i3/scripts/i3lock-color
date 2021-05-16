@@ -2,11 +2,11 @@
 
 B='#00000000'  # blank
 C='#FFFFFF22'  # clear ish
-D='#A3BE8CFF'  # default
-T='#ECEFF4FF'  # text
-W='#BF616AFF'  # wrong
-V='#88C0D0FF'  # verifying
-H='#ECEFF4FF'  # highlight
+D='#8EAF72FF'  # default
+T='#FFFFFFFF'  # text
+W='#B34853FF'  # wrong
+V='#69B0C4FF'  # verifying
+H='#E4B964FF'  # highlight
 
 i3lock \
 --insidevercolor=$C   \
