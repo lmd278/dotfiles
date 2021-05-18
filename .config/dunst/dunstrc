@@ -187,3 +187,7 @@
     background = "#BF616A"
     foreground = "#ECEFF4"
     timeout = 0
+
+[sounds]
+    body = "*"
+    script = ~/.config/i3/scripts/sound

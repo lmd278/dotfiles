@@ -1,9 +1,12 @@
 #!/bin/sh
 
-B='#00000000'  # blank
-C='#FFFFFF22'  # clear ish
+# B='#00000000'  # blank
+# C='#FFFFFF22'  # clear ish
+
+B='#2E344099'  # blur ish
+C='#2E344077'  # blur ish
 D='#8EAF72FF'  # default
-T='#FFFFFFFF'  # text
+T='#ECEFF4FF'  # text
 W='#B34853FF'  # wrong
 V='#69B0C4FF'  # verifying
 H='#E4B964FF'  # highlight

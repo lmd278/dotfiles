@@ -153,7 +153,7 @@ bindsym $mod+y          border pixel $borders
 # bindsym $mod+Shift+y
 
 bindsym $mod+u          border none
-# bindsym $mod+Shift+u
+bindsym $mod+Shift+u    [urgent=latest] focus
 
 bindsym $mod+i          split h ;exec --no-startup-id notify-send 'tile horizontally'
 bindsym $mod+Shift+i    exec --no-startup-id $terminal -e htop
@@ -211,21 +211,23 @@ bindsym $mod+Shift+b    move container to workspace back_and_forth; workspace ba
 bindsym $mod+n          border normal
 bindsym $mod+Shift+n    --release exec --no-startup-id "pkill nm-applet; sleep 1 ; nm-applet; exec notify-send 'restart nm-applet'"
 
-# bindsym $mod+m
+bindsym $mod+m          move absolute position center
 # bindsym $mod+Shift+m
 
 # #---Workspace bindings---# #
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
+
+set $ws1 "1 <span font_desc='Font Awesome 5 Free Brands 10'></span>"
+set $ws2 "2 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws3 "3 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws4 "4 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws5 "5 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws6 "6 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws7 "7 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws8 "8 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws9 "9 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
 
 bindsym $mod+1          workspace number $ws1
 bindsym $mod+Shift+1    move container to workspace $ws1; workspace $ws1
@@ -259,9 +261,9 @@ bindsym $mod+8          workspace number $ws8
 bindsym $mod+Shift+8    move container to workspace $ws8; workspace $ws8
 bindsym $mod+Ctrl+8     move container to workspace $ws8
 
-bindsym $mod+9          exec --no-startup-id $HOME/.config/i3/scripts/i3lock-color
-# bindsym $mod+Shift+9
-# bindsym $mod+Ctrl+9
+bindsym $mod+9          workspace number $ws9
+bindsym $mod+Shift+9    move container to workspace $ws9; workspace $ws9
+bindsym $mod+Ctrl+9     move container to workspace $ws9
 
 bindsym $mod+0          mode "$mode_system"
 # bindsym $mod+Shift+0
@@ -269,12 +271,24 @@ bindsym $mod+0          mode "$mode_system"
 
 # Open applications on specific workspaces
 # assign [class="{{...}}"] $ws{{...}}
+assign [class="Code"] $ws3
+assign [class="Mailspring"] $ws7
+assign [class="Microsoft Teams - Preview"] $ws8
 
 # Open specific applications in floating mode
 # for_window [class="{{...}}"] floating enable
+for_window [title="alsamixer"] floating enable border
+for_window [class="GParted"] floating enable
+for_window [class="Lightdm-gtk-greeter-settings"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="Nitrogen"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Simple-scan"] floating enable
+for_window [class="(?i)virtualbox"] floating enable
+for_window [class="Xfburn"] floating enable
 
 # Switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
+# for_window [urgent=latest] focus
 
 # #---Arrow key bindings---# #
 
@@ -305,6 +319,8 @@ bindsym $mod+Ctrl+Right     workspace next
 
 # bindsym XF86MonBrightnessUp      exec --no-startup-id "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown    exec --no-startup-id "xbacklight -dec 10; notify-send 'brightness down'"
+
+bindsym XF86Calculator           exec --no-startup-id mate-calculator
 
 # #---Other key bindings---# #
 

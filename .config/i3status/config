@@ -16,7 +16,7 @@ order += "memory"
 # order += "disk /home"
 order += "ethernet _first_"
 order += "wireless _first_"
-# order += "volume master"
+order += "volume master"
 order += "battery all"
 order += "tztime local"
 
@@ -55,14 +55,15 @@ disk "/home" {
 }
 
 ethernet _first_ {
-    format_up = " <span font_desc='Font Awesome 5 Free'></span> %ip (%speed) "
-    format_down = " <span font_desc='Font Awesome 5 Free'></span> None "
+    # format_up = " <span font_desc='Feather'></span> %ip (%speed) "
+    format_up = " <span font_desc='Feather'></span> %ip "
+    format_down = " <span font_desc='Feather'></span> None "
 }
 
 wireless _first_ {
     # format_up = " <span font_desc='Feather'></span> (%quality at %essid, %bitrate / %frequency) %ip "
-    format_up = " <span font_desc='Feather'></span> %quality at %essid "
-    # format_up = " <span font_desc='Feather'></span> %essid "
+    # format_up = " <span font_desc='Feather'></span> %quality at %essid "
+    format_up = " <span font_desc='Feather'></span> %essid "
     format_down = " <span font_desc='Feather'></span> None "
 }
 
@@ -76,7 +77,8 @@ volume master {
 
 battery all {
     # format = " <span font_desc='Feather'></span> %status %remaining (%emptytime %consumption)"
-    format = " <span font_desc='Feather'></span> %status %percentage %remaining"
+    # format = " <span font_desc='Feather'></span> %status %percentage %remaining"
+    format = " <span font_desc='Feather'></span> %status %percentage"
     last_full_capacity = true
     threshold_type = percentage
     low_threshold = 20
