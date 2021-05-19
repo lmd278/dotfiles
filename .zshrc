@@ -89,8 +89,9 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -105,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Enable apt package suggestions
-source /etc/zsh_command_not_found
+# source /etc/zsh_command_not_found
 
 # Enable fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
