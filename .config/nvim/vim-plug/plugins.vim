@@ -15,7 +15,6 @@ if exists('g:vscode')
     " Text navigation
     " Plug 'asvetliakov/vim-easymotion'
     Plug 'ChristianChiarulli/vscode-easymotion'
-    Plug 'unblevable/quick-scope'
     " Make the yanked region apparent
     Plug 'machakann/vim-highlightedyank'
 else
@@ -27,6 +26,8 @@ else
     Plug 'jiangmiao/auto-pairs'
     " Themes
     Plug 'arcticicestudio/nord-vim'
+    Plug 'ghifarit53/tokyonight-vim'
+    Plug 'tomasiser/vim-code-dark'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status line
@@ -53,7 +54,6 @@ else
     Plug 'junegunn/gv.vim'
     " Text navigation
     Plug 'easymotion/vim-easymotion'
-    Plug 'unblevable/quick-scope'
     " Terminal
     Plug 'voldikss/vim-floaterm'
     " Snippets
