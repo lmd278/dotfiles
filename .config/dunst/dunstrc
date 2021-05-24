@@ -1,7 +1,7 @@
 [global]
     font = Ubuntu Regular 11
     icon_position = left
-    max_icon_size = 48
+    max_icon_size = 50
 
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -188,6 +188,6 @@
     foreground = "#ECEFF4"
     timeout = 0
 
-[sounds]
-    body = "*"
+[power_manager]
+    summary = "Power Manager"
     script = ~/.config/i3/scripts/sound

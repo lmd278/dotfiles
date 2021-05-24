@@ -1,12 +1,12 @@
 #!/bin/sh
-# /usr/bin/i3exit
+# $HOME/.config/i3/scripts/i3exit
 
 # with openrc use loginctl
 [ "$(cat /proc/1/comm)" = "systemd" ] && logind=systemctl || logind=loginctl
 
 case "$1" in
     lock)
-        $HOME/.config/i3/scripts/i3lock-color
+        xflock4
         ;;
     logout)
         i3-msg exit

@@ -4,8 +4,8 @@ set $mod Mod4
 set $borders 2
 set $files thunar
 set $email mailspring
-set $browser brave-browser
 set $terminal alacritty
+set $browser google-chrome
 set $inner_gaps 14
 set $outer_gaps -2
 
@@ -14,10 +14,10 @@ set $outer_gaps -2
 # exec --no-startup-id {{...}}
 # exec_always --no-startup-id {{...}}
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id blueman-applet
 exec --no-startup-id clipit
 exec --no-startup-id ibus-daemon -drx
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id xfce4-power-manager
@@ -221,8 +221,8 @@ bindsym $mod+m          move absolute position center
 
 set $ws1 "1 <span font_desc='Font Awesome 5 Free Brands 10'></span>"
 set $ws2 "2 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
-set $ws3 "3 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
-set $ws4 "4 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws3 "3 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws4 "4 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
 set $ws5 "5 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
 set $ws6 "6 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
 set $ws7 "7 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
@@ -324,9 +324,9 @@ bindsym XF86Calculator           exec --no-startup-id mate-calculator
 
 # #---Other key bindings---# #
 
-bindsym Print                exec --no-startup-id $HOME/.config/i3/scripts/i3-scrot
-bindsym $mod+Print           --release exec --no-startup-id $HOME/.config/i3/scripts/i3-scrot -w
-bindsym $mod+Shift+Print     --release exec --no-startup-id $HOME/.config/i3/scripts/i3-scrot -s
+bindsym Print                exec --no-startup-id flameshot gui
+# bindsym $mod+Print
+# bindsym $mod+Shift+Print
 
 bindsym $mod+minus           scratchpad show
 bindsym $mod+Shift+minus     move scratchpad
