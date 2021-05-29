@@ -76,7 +76,7 @@ volume master {
 }
 
 battery all {
-    # format = " <span font_desc='Feather'></span> %status %remaining (%emptytime %consumption)"
+    # format = " <span font_desc='Feather'></span> %status %percentage %remaining (%emptytime %consumption)"
     # format = " <span font_desc='Feather'></span> %status %percentage %remaining"
     format = " <span font_desc='Feather'></span> %status %percentage"
     last_full_capacity = true

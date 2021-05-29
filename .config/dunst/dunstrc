@@ -2,6 +2,7 @@
     font = Ubuntu Regular 11
     icon_position = left
     max_icon_size = 50
+    frame_width = 1
 
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -176,16 +177,19 @@
 [urgency_low]
     background = "#2E3440"
     foreground = "#ECEFF4"
+    frame_color = "#4C566A"
     timeout = 10
 
 [urgency_normal]
     background = "#2E3440"
     foreground = "#ECEFF4"
+    frame_color = "#4C566A"
     timeout = 10
 
 [urgency_critical]
     background = "#BF616A"
     foreground = "#ECEFF4"
+    frame_color = "#BF616A"
     timeout = 0
 
 [power_manager]

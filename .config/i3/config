@@ -165,7 +165,8 @@ bindsym $mod+p          exec --no-startup-id pkill picom
 bindsym $mod+Shift+p    exec --no-startup-id picom -b
 
 bindsym $mod+a          focus parent
-bindsym $mod+Shift+a    exec --no-startup-id $terminal -e 'alsamixer'
+# bindsym $mod+Shift+a    exec --no-startup-id $terminal -e 'alsamixer'
+bindsym $mod+Shift+a    exec --no-startup-id pavucontrol
 
 bindsym $mod+s          layout stacking
 bindsym $mod+Shift+s    mark --add "swapee"; mode "swap"
@@ -277,7 +278,7 @@ assign [class="Microsoft Teams - Preview"] $ws8
 
 # Open specific applications in floating mode
 # for_window [class="{{...}}"] floating enable
-for_window [title="alsamixer"] floating enable border
+for_window [title="alsamixer"] floating enable
 for_window [class="GParted"] floating enable
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable
@@ -336,6 +337,9 @@ bindsym $mod+Shift+Tab       workspace prev
 
 bindsym $mod+Return          exec --no-startup-id $terminal
 # bindsym $mod+Shift+Return
+
+bindsym $mod+slash          exec --no-startup-id rofi -show drun
+bindsym $mod+Shift+slash    exec --no-startup-id rofi -show window
 
 bindsym $mod+space           focus mode_toggle
 bindsym $mod+Shift+space     floating toggle
