@@ -180,7 +180,7 @@ bindsym $mod+Shift+a    exec --no-startup-id pavucontrol
 bindsym $mod+s          layout stacking
 bindsym $mod+Shift+s    mark --add "swapee"; mode "swap"
 
-bindsym $mod+d          exec --no-startup-id dmenu_run -i -fn "Ubuntu" -nb "$inactive-bg-color" -nf "$urgent-text-color" -sb "$bg-color" -sf "$text-color"
+bindsym $mod+d          exec --no-startup-id dmenu_run -i -fn "Ubuntu" -nb "$nord0" -nf "$nord6" -sb "$nord8" -sf "$nord0"
 bindsym $mod+Shift+d    --release exec --no-startup-id "killall dunst; exec notify-send 'restart dunst'"
 
 bindsym $mod+f          fullscreen toggle
