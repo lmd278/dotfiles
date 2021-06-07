@@ -25,7 +25,7 @@ order += "tztime local"
 # <span font_desc='Font Awesome 5 Free'></span>
 
 load {
-    format = " <span font_desc='Feather'></span> %15min Load "
+    format = " <span font_desc='Feather'></span> %15min "
 }
 
 cpu_temperature 0 {
@@ -80,11 +80,13 @@ battery all {
     # format = " <span font_desc='Feather'></span> %status %percentage %remaining"
     format = " <span font_desc='Feather'></span> %status %percentage"
     last_full_capacity = true
+    integer_battery_capacity = true
     threshold_type = percentage
     low_threshold = 20
 }
 
 tztime local {
     format = " %time "
-    format_time = " %a, %-d %b %H:%M"
+    # format_time = " %a, %d %b, %H:%M"
+    format_time = " %b %d, %H:%M"
 }
