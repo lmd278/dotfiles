@@ -119,7 +119,7 @@ set $nord16 #8A95AB
 
 # Window decorations
 #                       border  backgr. text    indica.
-client.focused          $nord0  $nord8  $nord0  $nord13
+client.focused          $nord8  $nord8  $nord0  $nord13
 client.unfocused        $nord0  $nord1  $nord16 $nord13
 client.focused_inactive $nord0  $nord1  $nord16 $nord13
 client.urgent           $nord0  $nord11 $nord6  $nord13
