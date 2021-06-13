@@ -1,7 +1,7 @@
 [global]
     font = Ubuntu Regular 11
     icon_position = left
-    max_icon_size = 50
+    max_icon_size = 48
     frame_width = 1
 
     # Allow a small subset of html markup:

@@ -6,7 +6,6 @@
 colors:
   primary:
     background: '0x2E3440'
-    # background: '0x151515'
     foreground: '0xD8DEE9'
   cursor:
     text: '0x2E3440'
