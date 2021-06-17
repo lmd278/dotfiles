@@ -1,0 +1,18 @@
+configuration {
+    modi: "window,drun,run";
+    font: "Mono 16";
+    show-icons: true;
+/*  icon-theme: ;*/
+    drun-display-format: "{name}";
+    window-format: "\ {n} {t}";
+    theme: "nord";
+    kb-remove-to-eol: "";
+    kb-accept-entry: "Control+m,Return,KP_Enter";
+    kb-row-up: "Up,Control+p,ISO_Left_Tab,Control+k";
+    kb-row-down: "Down,Control+n,Control+j";
+}
+
+element-icon {
+    size: 1.0em ;
+    margin: 0 5px 0 0;
+}
