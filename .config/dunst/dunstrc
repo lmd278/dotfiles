@@ -135,7 +135,7 @@
     #   %%  Literal %
     # Markup is allowed
     # format = "<b>%s</b>\n%b"
-    format = "<span size='large' font_desc='Ubuntu 11' weight='bold' foreground='#88C0D0'>%s</span>\n<span font_desc='Ubuntu 11'>%b</span>"
+    format = "<span size='large' font_desc='Ubuntu 11' weight='bold' foreground='#88C0D0'>%s</span> %p\n<span font_desc='Ubuntu 11'>%b</span>"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -294,13 +294,13 @@
 [urgency_low]
     background = "#2E3440"
     foreground = "#ECEFF4"
-    frame_color = "#525D73"
+    frame_color = "#5F6B85"
     timeout = 5
 
 [urgency_normal]
     background = "#2E3440"
     foreground = "#ECEFF4"
-    frame_color = "#525D73"
+    frame_color = "#5F6B85"
     timeout = 5
 
 [urgency_critical]

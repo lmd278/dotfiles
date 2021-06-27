@@ -128,13 +128,14 @@ set $nord14 #A3BE8C
 set $nord15 #B48EAD
 set $nord16 #57637A
 set $nord17 #8A95AB
+set $nord18 #8CBBDB
 
 # Window decorations
 # class                   border  backgr. text    indica. child_border
-  client.focused          $nord0  $nord8  $nord0  $nord13
-  client.unfocused        $nord0  $nord16 $nord4  $nord13
-  client.focused_inactive $nord0  $nord16 $nord4  $nord13
-  client.urgent           $nord0  $nord11 $nord6  $nord13
+  client.focused          $nord18 $nord18 $nord1  $nord13
+  client.focused_inactive $nord1  $nord1  $nord18 $nord13
+  client.unfocused        $nord1  $nord1  $nord18 $nord13
+  client.urgent           $nord11 $nord11 $nord6  $nord13
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
@@ -157,7 +158,7 @@ bar {
         separator $nord8
 
         #                  border  backgr. text
-        focused_workspace  $nord8  $nord8  $nord0
+        focused_workspace  $nord18 $nord18 $nord0
         inactive_workspace $nord0  $nord0  $nord17
         urgent_workspace   $nord11 $nord11 $nord6
     }

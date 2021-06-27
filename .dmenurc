@@ -2,8 +2,11 @@
 # ~/.dmenurc
 #
 
+## define the height of dmenu
+DMENU_H="23"
+
 ## define the font for dmenu to be used
-DMENU_FN="Ubuntu-12.5"
+DMENU_FN="Ubuntu-11"
 
 ## background colour for unselected menu-items
 DMENU_NB="#2E3440"
@@ -12,7 +15,7 @@ DMENU_NB="#2E3440"
 DMENU_NF="#ECEFF4"
 
 ## background colour for selected menu-items
-DMENU_SB="#88C0D0"
+DMENU_SB="#8CBBDB"
 
 ## textcolour for selected menu-items
 DMENU_SF="#2E3440"
@@ -21,4 +24,4 @@ DMENU_SF="#2E3440"
 TERMINAL_CMD="$TERM -e"
 
 ## export our variables
-DMENU_OPTIONS="-fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
+DMENU_OPTIONS="-h $DMENU_H -fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
