@@ -45,7 +45,7 @@ exec_always --no-startup-id fix_xcursor
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel $borders
-default_floating_border normal $borders
+default_floating_border pixel $borders
 
 # Hide borders
 hide_edge_borders none
@@ -138,18 +138,18 @@ set $nord17 #8A95AB
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-	i3bar_command i3bar
-	status_command i3status
-	position top
+    i3bar_command i3bar
+    status_command i3status
+    position top
 
     # Please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-	# tray_output primary
-	# tray_output eDP1
+    # tray_output primary
+    # tray_output eDP1
 
-	bindsym button4 nop
-	bindsym button5 nop
+    bindsym button4 nop
+    bindsym button5 nop
     # font pango:Ubuntu Regular 11
-	# strip_workspace_numbers yes
+    # strip_workspace_numbers yes
 
     colors {
         background $nord0
