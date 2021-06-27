@@ -311,6 +311,6 @@
 
 [power_manager]
     summary = "Power Manager"
-    script = ~/.config/i3/scripts/sound
+    script = ~/.config/dunst/scripts/sound
 
 # vim: ft=cfg
