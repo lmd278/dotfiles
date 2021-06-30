@@ -321,7 +321,7 @@ for_window [class="Simple-scan"] floating enable
 for_window [class="Xfburn"] floating enable
 
 # Switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
+# focus_on_window_activation focus
 
 ##############################
 # #---Arrow key bindings---# #
