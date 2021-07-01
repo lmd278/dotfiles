@@ -5,7 +5,7 @@
 set $mod Mod4
 set $borders 2
 set $files thunar
-set $email mailspring
+set $email thunderbird
 set $terminal alacritty
 set $browser google-chrome
 set $inner_gaps 14
@@ -306,7 +306,7 @@ bindsym $mod+0          mode "$mode_system"
 # Open applications on specific workspaces
 # assign [class="{{...}}"] $ws{{...}}
 assign [class="Code"] $ws3
-assign [class="Mailspring"] $ws7
+assign [class="Thunderbird"] $ws7
 assign [class="Microsoft Teams - Preview"] $ws8
 
 # Open specific applications in floating mode
@@ -351,8 +351,8 @@ bindsym $mod+Ctrl+Right     workspace next
 # bindsym XF86AudioLowerVolume
 # bindsym XF86AudioMute
 # bindsym XF86AudioMicMute
-# bindsym XF86MonBrightnessUp
-# bindsym XF86MonBrightnessDown
+bindsym XF86MonBrightnessUp      exec --no-startup-id $HOME/.config/i3/scripts/brightness up
+bindsym XF86MonBrightnessDown    exec --no-startup-id $HOME/.config/i3/scripts/brightness down
 bindsym XF86Calculator           exec --no-startup-id mate-calculator
 
 ##############################

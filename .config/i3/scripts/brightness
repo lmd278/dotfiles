@@ -1,0 +1,45 @@
+#!/bin/sh
+# $HOME/.config/i3/scripts/brightness
+
+notify() {
+    BRIGHTNESS="$(brightnessctl i | grep -oP '\(\K[^%\)]+')"
+    
+    if [ "$BRIGHTNESS" -eq 0 ]; then
+        icon_name="notification-display-brightness-off"
+    elif [ "$BRIGHTNESS" -lt 10 ]; then
+        icon_name="notification-display-brightness-low"
+    elif [ "$BRIGHTNESS" -lt 70 ]; then
+        icon_name="notification-display-brightness-medium"
+    elif [ "$BRIGHTNESS" -lt 100 ]; then
+        icon_name="notification-display-brightness-high"
+    else
+        icon_name="notification-display-brightness-full"
+    fi
+    
+    exec dunstify -r 100 -i "$icon_name" "Display" "Brightness: $BRIGHTNESS%" -h int:value:"$BRIGHTNESS"
+}
+
+case "$1" in
+    up)
+        brightnessctl set 10%+ -q
+        notify
+        ;;
+    down)
+        brightnessctl set 10%- -q
+        notify
+        ;;
+    low)
+        brightnessctl set 25% -q
+        notify
+        ;;
+    high)
+        brightnessctl set 25% -q
+        notify
+        ;;
+    *)
+        echo "== ! brightness: missing or invalid argument ! =="
+        echo "Try again with: up | down | low | high"
+        exit 2
+esac
+
+exit 0
