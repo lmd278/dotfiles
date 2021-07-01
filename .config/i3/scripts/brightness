@@ -5,15 +5,13 @@ notify() {
     BRIGHTNESS="$(brightnessctl i | grep -oP '\(\K[^%\)]+')"
     
     if [ "$BRIGHTNESS" -eq 0 ]; then
-        icon_name="notification-display-brightness-off"
-    elif [ "$BRIGHTNESS" -lt 10 ]; then
-        icon_name="notification-display-brightness-low"
-    elif [ "$BRIGHTNESS" -lt 70 ]; then
-        icon_name="notification-display-brightness-medium"
-    elif [ "$BRIGHTNESS" -lt 100 ]; then
-        icon_name="notification-display-brightness-high"
+        icon_name="display-brightness-off-symbolic"
+    elif [ "$BRIGHTNESS" -le 30 ]; then
+        icon_name="display-brightness-low-symbolic"
+    elif [ "$BRIGHTNESS" -le 80 ]; then
+        icon_name="display-brightness-medium-symbolic"
     else
-        icon_name="notification-display-brightness-full"
+        icon_name="display-brightness-high-symbolic"
     fi
     
     exec dunstify -r 100 -i "$icon_name" "Display" "Brightness: $BRIGHTNESS%" -h int:value:"$BRIGHTNESS"
@@ -33,7 +31,7 @@ case "$1" in
         notify
         ;;
     high)
-        brightnessctl set 25% -q
+        brightnessctl set 75% -q
         notify
         ;;
     *)
