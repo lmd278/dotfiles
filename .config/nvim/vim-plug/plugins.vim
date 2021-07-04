@@ -43,7 +43,7 @@ else
     " Better comments
     Plug 'tpope/vim-commentary'
     " Add some color
-    Plug 'norcalli/nvim-colorizer.lua'
+    Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
     Plug 'junegunn/rainbow_parentheses.vim'
     " Start screen
     Plug 'mhinz/vim-startify'
