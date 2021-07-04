@@ -28,4 +28,5 @@ else
     source $HOME/.config/nvim/plug-config/floaterm.vim
     source $HOME/.config/nvim/plug-config/undo-tree.vim
     source $HOME/.config/nvim/plug-config/highlightedyank.vim
+    " luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 endif
