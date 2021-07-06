@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/lmd/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -74,6 +74,8 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-vi-mode
+  # zsh-prompt-benchmark
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -108,8 +110,16 @@ export EDITOR='nvim'
 # Enable apt package suggestions
 source /etc/zsh_command_not_found
 
-# Enable fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Better vi-mode
+ZVM_VI_EDITOR=nvim
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
+ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
+
+# The plugin will auto execute this zvm_after_init function
+zvm_after_init() {
+    # Enable fzf
+    [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+}
 
 # Setting rg as the default source for fzf
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
