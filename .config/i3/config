@@ -123,14 +123,15 @@ set $nord14 #A3BE8C
 set $nord15 #B48EAD
 set $nord16 #57637A
 set $nord17 #8A95AB
-set $nord18 #8CBBDB
+set $nord18 #A1BCD7
+set $nord19 #B8CCE1
 
 # Window decorations
 # class                   border  backgr. text    indica. child_border
-  client.focused          $nord18 $nord18 $nord1  $nord13
-  client.focused_inactive $nord1  $nord1  $nord18 $nord13
-  client.unfocused        $nord1  $nord1  $nord18 $nord13
-  client.urgent           $nord11 $nord11 $nord6  $nord13
+  client.focused          $nord19 $nord18 $nord1  $nord13
+  client.focused_inactive $nord0  $nord1  $nord18 $nord13
+  client.unfocused        $nord0  $nord1  $nord18 $nord13
+  client.urgent           $nord12 $nord11 $nord6  $nord13
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
@@ -150,7 +151,7 @@ bar {
     colors {
         background $nord0
         statusline $nord6
-        separator $nord8
+        separator $nord18
 
         #                  border  backgr. text
         focused_workspace  $nord18 $nord18 $nord0
@@ -254,7 +255,7 @@ bindsym $mod+m          move absolute position center
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
 set $ws1 "1 <span font_desc='Font Awesome 5 Free Brands 10'></span>"
-set $ws2 "2 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
+set $ws2 "2 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
 set $ws3 "3 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
 set $ws4 "4 <span font_desc='Font Awesome 5 Free Solid 10'></span>"
 set $ws5 "5 <span font_desc='Font Awesome 5 Free Solid 10'></span>"

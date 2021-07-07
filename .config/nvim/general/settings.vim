@@ -37,4 +37,5 @@ set noswapfile
 au FileType * set fo-=c fo-=r fo-=o
 
 " You can't stop me
-cmap w!! w !sudo tee %
+" cmap w!! w !sudo tee %
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
