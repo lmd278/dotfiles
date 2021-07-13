@@ -1,6 +1,15 @@
+//                _____ 
+//    _________  / __(_)
+//   / ___/ __ \/ /_/ / 
+//  / /  / /_/ / __/ /  
+// /_/   \____/_/ /_/   
+
+// ROFI CONFIG (~/.config/rofi/config.rasi) 
+// ----------------------------------------
+
 configuration {
     modi: "window,drun,ssh";
-    font: "JetBrains Mono 14";
+    font: "JetBrainsMono Nerd Font 14";
     lines: 10;
     show-icons: true;
     window-format: "{c}\t{t}";
