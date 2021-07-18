@@ -1,4 +1,4 @@
-" " Toggle floaterm
+" Toggle floaterm
 let g:floaterm_keymap_toggle = '<leader>t'
 
 let g:floaterm_width=0.8

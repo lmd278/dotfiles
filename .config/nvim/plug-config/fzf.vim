@@ -1,6 +1,4 @@
-" ============================================================================ "
-" ===                          Default settings                            === "
-" ============================================================================ "
+" Default settings ------------------------------------------------------------"
 
 " This is the default extra key bindings
 let g:fzf_action = {
@@ -31,9 +29,7 @@ let g:fzf_colors =
 "   'previous-history' instead of 'down' and 'up'.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-" ============================================================================ "
-" ===                          Custom settings                             === "
-" ============================================================================ "
+" Custom settings -------------------------------------------------------------"
 
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8, 'highlight': 'Todo', 'border': 'sharp' } }
 

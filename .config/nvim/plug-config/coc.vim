@@ -1,6 +1,4 @@
-" ============================================================================ "
-" ===                          Default settings                            === "
-" ============================================================================ "
+" Default settings ------------------------------------------------------------"
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
@@ -169,9 +167,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" ============================================================================ "
-" ===                          Custom settings                             === "
-" ============================================================================ "
+" Custom settings -------------------------------------------------------------"
 
 " Install the missing extensions
 let g:coc_global_extensions = [

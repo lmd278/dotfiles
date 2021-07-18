@@ -5,6 +5,8 @@ set laststatus=2
 set hidden
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
 set mouse=a
 
 set autoindent

@@ -125,13 +125,13 @@ bindsym $mod+u          border none
 bindsym $mod+Shift+u    [urgent=latest] focus
 
 bindsym $mod+i          split h ;exec --no-startup-id notify-send 'Window' 'Tile horizontally'
-bindsym $mod+Shift+i    exec --no-startup-id $terminal -e htop
+bindsym $mod+Shift+i    --release exec --no-startup-id "pkill nm-applet; sleep 1 ; nm-applet; exec notify-send 'Network' 'Restart nm-applet'"
 
 bindsym $mod+o          split toggle
 bindsym $mod+Shift+o    exec --no-startup-id $terminal -e ranger
 
 # bindsym $mod+p
-# bindsym $mod+Shift+p
+bindsym $mod+Shift+p    exec --no-startup-id $terminal -e htop
 
 bindsym $mod+a          focus parent
 bindsym $mod+Shift+a    exec --no-startup-id pavucontrol
@@ -140,7 +140,7 @@ bindsym $mod+s          layout stacking
 bindsym $mod+Shift+s    mark --add "swapee"; mode "$mode_swap"
 
 bindsym $mod+d          exec --no-startup-id rofi -show run
-bindsym $mod+Shift+d    --release exec --no-startup-id "killall dunst; exec notify-send 'Notification' 'Restart dunst'"
+# bindsym $mod+Shift+d
 
 bindsym $mod+f          fullscreen toggle
 bindsym $mod+Shift+f    exec --no-startup-id $files
@@ -178,7 +178,7 @@ bindsym $mod+b          workspace back_and_forth
 bindsym $mod+Shift+b    move container to workspace back_and_forth; workspace back_and_forth
 
 bindsym $mod+n          border normal $borders
-bindsym $mod+Shift+n    --release exec --no-startup-id "pkill nm-applet; sleep 1 ; nm-applet; exec notify-send 'Network' 'Restart nm-applet'"
+bindsym $mod+Shift+n    --release exec --no-startup-id "killall dunst; exec notify-send 'Notification' 'Restart dunst'"
 
 bindsym $mod+m          move absolute position center
 # bindsym $mod+Shift+m

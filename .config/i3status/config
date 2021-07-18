@@ -21,8 +21,8 @@ order += "load"
 order += "cpu_usage"
 order += "disk /"
 # order += "disk /home"
-order += "ethernet _first_"
 order += "wireless _first_"
+order += "ethernet _first_"
 # order += "battery all"
 order += "tztime local"
 
@@ -47,17 +47,17 @@ disk "/home" {
     format = " <span font_desc='Feather'></span> %avail Left "
 }
 
-ethernet _first_ {
-    # format_up = " <span font_desc='Feather'></span> %ip (%speed) "
-    format_up = " <span font_desc='Feather'></span> %ip "
-    format_down = " <span font_desc='Feather'></span> None "
-}
-
 wireless _first_ {
     # format_up = " <span font_desc='Feather'></span> (%quality at %essid, %bitrate / %frequency) %ip "
     # format_up = " <span font_desc='Feather'></span> %quality at %essid "
     format_up = " <span font_desc='Feather'></span> %essid "
     format_down = " <span font_desc='Feather'></span> None "
+}
+
+ethernet _first_ {
+    # format_up = " <span font_desc='Feather'></span> %ip (%speed) "
+    format_up = " <span font_desc='Feather'></span> %ip "
+    format_down = " <span font_desc='Feather'></span> None "
 }
 
 battery all {

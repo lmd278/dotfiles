@@ -2,10 +2,6 @@
 let mapleader=" "
 nnoremap <Space> <Nop>
 
-" ============================================================================ "
-" ===                              Functions                               === "
-" ============================================================================ "
-
 function! s:vscodeCommentary(...) abort
     if !a:0
         let &operatorfunc = matchstr(expand('<sfile>'), '[^. ]*$')
@@ -18,10 +14,6 @@ function! s:vscodeCommentary(...) abort
 
     call VSCodeCallRange('editor.action.commentLine', line1, line2, 0)
 endfunction
-
-" ============================================================================ "
-" ===                               Mappings                               === "
-" ============================================================================ "
 
 " Better indenting
 vnoremap < <gv
