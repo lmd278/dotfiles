@@ -162,7 +162,7 @@ bindsym $mod+l          focus right
 bindsym $mod+Shift+l    move right 25
 bindsym $mod+Ctrl+l     workspace next
 
-bindsym $mod+z          bar mode toggle
+# bindsym $mod+z
 # bindsym $mod+Shift+z
 
 # bindsym $mod+x
@@ -390,8 +390,8 @@ mode "$mode_swap" {
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Choose 0 to remove gaps or d to reset gaps for current workspace. Press one of + / - (in-/decrement for current workspace), 0 (remove gaps for current workspace), d (reset gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: [o]uter, [i]nner, [0] gaps, [d]efault
-set $mode_gaps_outer Outer Gaps: [ + | - | 0 | d ] (local), Shift + [ + | - | 0 | d ] (global)
-set $mode_gaps_inner Inner Gaps: [ + | - | 0 | d ] (local), Shift + [ + | - | 0 | d ] (global)
+set $mode_gaps_outer Outer Gaps: [+], [-], [0], [d] (local); Shift + [+], [-], [0], [d] (global)
+set $mode_gaps_inner Inner Gaps: [+], [-], [0], [d] (local); Shift + [+], [-], [0], [d] (global)
 
 mode "$mode_gaps" {
     bindsym o      mode "$mode_gaps_outer"
