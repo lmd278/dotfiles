@@ -75,7 +75,6 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-vi-mode
-  zsh-prompt-benchmark
 )
 
 source $ZSH/oh-my-zsh.sh
