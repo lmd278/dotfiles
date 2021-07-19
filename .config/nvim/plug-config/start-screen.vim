@@ -1,4 +1,4 @@
-" Larry 3D font
+" Slant font
 let g:startify_custom_header = [
             \ '      ____  ___  ____ _   __(_)___ ___ ',
             \ '     / __ \/ _ \/ __ \ | / / / __ `__ \',
