@@ -239,9 +239,9 @@ bindsym $mod+0          mode "$mode_system"
 # Open applications on specific workspaces
 # assign [class="[...]"] $ws[...]
 assign [class="Code"] $ws3
-assign [class="Gimp"] $ws5
-assign [class="Thunderbird"] $ws8
-assign [class="Microsoft Teams - Preview"] $ws9
+assign [class="Thunderbird"] $ws7
+assign [class="Microsoft Teams - Preview"] $ws8
+assign [class="Gimp"] $ws9
 
 # Open specific applications in floating mode
 # for_window [class="[...]"] floating enable
