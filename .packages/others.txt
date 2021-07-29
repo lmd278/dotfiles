@@ -52,7 +52,6 @@ mobile-broadband-provider-info
 modemmanager
 mousepad
 nano
-neovim-git
 network-manager-applet
 networkmanager
 networkmanager-openconnect
