@@ -1,0 +1,14 @@
+binutils
+coreutils
+diffutils
+file
+findutils
+gawk
+glibc
+grep
+less
+moreutils
+procps-ng
+sed
+tar
+util-linux

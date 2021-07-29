@@ -1,0 +1,6 @@
+acpi
+acpid
+brightnessctl
+optimus-manager
+optimus-manager-qt
+tlp
