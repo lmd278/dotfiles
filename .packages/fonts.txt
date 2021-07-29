@@ -13,4 +13,3 @@ ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 ttf-ubuntu-font-family
-ttf-vista-fonts

@@ -8,3 +8,4 @@ yay -S optimus-manager-qt
 yay -S polybar
 yay -S ttf-ms-fonts
 yay -S ttf-tahoma
+yay -S ttf-vista-fonts

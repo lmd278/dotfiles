@@ -26,7 +26,6 @@ gimp
 gnome-characters
 gnome-keyring
 go
-google-chrome
 gparted
 gsimplecal
 gvfs
