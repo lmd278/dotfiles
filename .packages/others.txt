@@ -78,7 +78,6 @@ rofi
 rsync
 rxvt-unicode
 simple-scan
-teams
 the_silver_searcher
 thunar
 thunar-archive-plugin
@@ -86,7 +85,6 @@ thunar-volman
 thunderbird
 transmission-gtk
 tree
-ttf-ms-fonts
 ueberzug
 unrar
 upower
@@ -96,7 +94,6 @@ virtualbox
 virtualbox
 virtualbox-ext-vnc
 virtualbox-host-dkms
-visual-studio-code-bin
 vlc
 w3m
 wget
