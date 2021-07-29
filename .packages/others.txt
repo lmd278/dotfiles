@@ -41,7 +41,6 @@ htop
 icedtea-web
 imagemagick
 inetutils
-inxi
 libreoffice-fresh
 logrotate
 lxappearance
@@ -71,7 +70,6 @@ p7zip
 perl
 picom
 polkit-gnome
-polybar
 poppler-data
 python-pip
 qt5ct
@@ -80,6 +78,7 @@ ripgrep
 ristretto
 rofi
 rsync
+rxvt-unicode
 simple-scan
 teams
 the_silver_searcher

@@ -7,14 +7,14 @@ set -e
 systemctl enable systemd-timesyncd
 
 # Display manager
-sudo systemctl enable lightdm
+# sudo systemctl enable lightdm
 
 # Bluetooth
 sudo systemctl enable bluetooth.service
 sudo sed -i 's/'#AutoEnable=false'/'AutoEnable=true'/g' /etc/bluetooth/main.conf
 
 # Printer
-sudo systemctl enable org.cups.cupsd.service
+sudo systemctl enable cups.service
 
 # Power management
 sudo systemctl enable tlp.service
@@ -30,7 +30,7 @@ sudo cp ~/Downloads/dotfiles/.config/90-touchpad.conf /etc/X11/xorg.conf.d/90-to
 sudo systemctl enable optimus-manager.service
 
 # Network discovery
-cp ~/Downloads/dotfiles/.config/nsswitch.conf /etc/nsswitch.conf
+sudo cp ~/Downloads/dotfiles/.config/nsswitch.conf /etc/nsswitch.conf
 sudo systemctl enable avahi-daemon.service
 
 # AppArmor
