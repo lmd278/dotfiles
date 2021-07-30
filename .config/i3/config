@@ -13,7 +13,7 @@ set $mod Mod4
 set $borders 2
 set $files thunar
 set $email thunderbird
-set $terminal alacritty
+set $terminal xterm
 set $browser google-chrome
 set $inner_gaps 14
 set $outer_gaps -2
