@@ -1,7 +1,7 @@
 i3-gaps
-# lightdm
-# lightdm-gtk-greeter
-# lightdm-gtk-greeter-settings
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 xorg
 xorg-apps
 xorg-drivers
