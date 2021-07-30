@@ -40,5 +40,4 @@ sudo systemctl enable apparmor.service
 sudo systemctl enable sshd
 
 # TRIM for SSD
-sudo systemctl enable fstrim.timer
-sudo systemctl start fstrim.timer
+sudo systemctl enable --now fstrim.timer

@@ -3,7 +3,6 @@ alacritty
 apparmor
 arandr
 atril
-cabextract
 clang
 copyq
 crda
