@@ -4,6 +4,7 @@
 set -e
 
 # Install packages one by one
+yay -S betterlockscreen
 yay -S google-chrome
 yay -S inxi
 yay -S neovim-git

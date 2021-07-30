@@ -41,3 +41,6 @@ sudo systemctl enable sshd
 
 # TRIM for SSD
 sudo systemctl enable --now fstrim.timer
+
+# Betterlockscreen
+sudo systemctl enable betterlockscreen@$USER
