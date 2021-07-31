@@ -7,7 +7,7 @@ set -e
 systemctl enable systemd-timesyncd
 
 # Display manager
-# sudo systemctl enable lightdm
+sudo systemctl enable lightdm
 
 # Bluetooth
 sudo systemctl enable bluetooth.service
@@ -36,8 +36,23 @@ sudo systemctl enable avahi-daemon.service
 # AppArmor
 sudo systemctl enable apparmor.service
 
+# Firewall
+sudo systemctl enable ufw.service
+
+# ModemManager
+sudo systemctl enable ModemManager.service
+
 # OpenSSH
 sudo systemctl enable sshd
 
-# TRIM for SSD
-sudo systemctl enable --now fstrim.timer
+# Periodic TRIM
+sudo systemctl enable fstrim.timer
+
+# Redshift
+sudo systemctl --user enable redshift
+
+# Upower
+sudo systemctl enable upower.service
+
+# Wpa_supplicant
+sudo systemctl enable wpa_supplicant.service

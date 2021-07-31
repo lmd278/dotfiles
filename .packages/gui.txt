@@ -3,7 +3,4 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 xorg
-xorg-apps
-xorg-drivers
-xorg-fonts
 xorg-xinit

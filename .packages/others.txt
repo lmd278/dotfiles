@@ -2,6 +2,7 @@ accountsservice
 alacritty
 apparmor
 arandr
+aria2
 atril
 clang
 copyq
@@ -72,6 +73,7 @@ poppler-data
 python-pip
 qt5ct
 ranger
+redshift
 reflector
 ripgrep
 ristretto
@@ -87,11 +89,11 @@ thunderbird
 transmission-gtk
 tree
 ueberzug
+ufw
 unrar
 upower
 usbutils
 vi
-virtualbox
 virtualbox
 virtualbox-ext-vnc
 virtualbox-host-dkms
@@ -107,3 +109,4 @@ xfce4-power-manager
 xfce4-settings
 xfce4-terminal
 xterm
+zsh

@@ -1,11 +1,8 @@
-intel-media-driver
 intel-ucode
 mesa
 mesa-demos
-mesa-vdpau
 nvidia
 nvidia-prime
 nvidia-settings
 nvidia-utils
 virtualbox-guest-utils
-vulkan-intel

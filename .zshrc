@@ -107,7 +107,7 @@ export EDITOR='nvim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Enable apt package suggestions
-source /etc/zsh_command_not_found
+# source /etc/zsh_command_not_found
 
 # Better vi-mode
 ZVM_VI_EDITOR=nvim
