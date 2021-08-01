@@ -26,9 +26,6 @@ sudo usermod -a -G video,input lmd
 sudo mkdir -p /etc/X11/xorg.conf.d
 sudo cp ~/Downloads/dotfiles/.config/90-touchpad.conf /etc/X11/xorg.conf.d/90-touchpad.conf
 
-# Hybrid graphics
-sudo systemctl enable optimus-manager.service
-
 # Network discovery
 sudo cp ~/Downloads/dotfiles/.config/nsswitch.conf /etc/nsswitch.conf
 sudo systemctl enable avahi-daemon.service
@@ -49,7 +46,7 @@ sudo systemctl enable sshd
 sudo systemctl enable fstrim.timer
 
 # Redshift
-sudo systemctl --user enable redshift
+systemctl --user enable redshift
 
 # Upower
 sudo systemctl enable upower.service
