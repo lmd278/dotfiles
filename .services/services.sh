@@ -45,9 +45,6 @@ sudo systemctl enable sshd
 # Periodic TRIM
 sudo systemctl enable fstrim.timer
 
-# Redshift
-systemctl --user enable redshift
-
 # Upower
 sudo systemctl enable upower.service
 
