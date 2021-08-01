@@ -1,6 +1,6 @@
 #!/bin/sh
 
-find_packages () {
+find_packages() {
   local pkgs cmd=$1
   local FUNCNEST=10
 
