@@ -107,14 +107,14 @@ export EDITOR='nvim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Enable apt package suggestions
-# source /etc/zsh_command_not_found
+source /etc/zsh_command_not_found
 
 # Better vi-mode
 ZVM_VI_EDITOR=nvim
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
 ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
 
-# The plugin will auto execute this zvm_after_init function
+# This zvm_after_init function will be auto executed by zsh-vi-mode
 zvm_after_init() {
     # Enable fzf
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

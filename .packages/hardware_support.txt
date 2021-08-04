@@ -1,8 +1,0 @@
-intel-ucode
-mesa
-mesa-demos
-nvidia
-nvidia-prime
-nvidia-settings
-nvidia-utils
-virtualbox-guest-utils

@@ -1,4 +1,0 @@
-acpi
-acpid
-brightnessctl
-tlp
