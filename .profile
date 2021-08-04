@@ -31,5 +31,3 @@ export BROWSER=/usr/bin/google-chrome-stable
 export EDITOR=/usr/bin/nvim
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export QT_QPA_PLATFORMTHEME=qt5ct
-export XDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
-export XDG_DATA_DIRS=/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share

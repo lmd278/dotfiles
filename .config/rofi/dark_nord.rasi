@@ -7,10 +7,6 @@
    green:            #A3BE8C;
    red:              #BF616A;
 
-   /* dark1:            #2E3440; */
-   /* dark2:            #3B4252; */
-   /* dark3:            #434C5E; */
-   /* dark4:            #7B8394; */
    dark1:            #272727;
    dark2:            #383838;
    dark3:            #434343;
