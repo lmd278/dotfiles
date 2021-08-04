@@ -12,8 +12,9 @@ configuration {
     font: "JetBrainsMono Nerd Font 14";
     lines: 10;
     show-icons: true;
+    icon-theme: "Papirus-Dark";
     window-format: "{c}\t{t}";
-    theme: "nord";
+    theme: "dark_nord";
     kb-remove-to-eol: "";
     kb-accept-entry: "Control+m,Return,KP_Enter";
     kb-row-up: "Up,Control+p,ISO_Left_Tab,Control+k";
