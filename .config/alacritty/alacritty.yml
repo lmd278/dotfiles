@@ -11,8 +11,7 @@
 # Colors (Nord)
 colors:
   primary:
-    # background: '0x2E3440'
-    background: '0x272727'
+    background: '0x2E3440'
     foreground: '0xD8DEE9'
   cursor:
     text: '0x2E3440'

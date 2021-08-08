@@ -39,7 +39,7 @@
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
     # geometry = "300x5-30+20"
-    geometry = "300x5-25+25"
+    geometry = "325x5-20+50"
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
 
@@ -62,19 +62,21 @@
     # Draw a line of "separator_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 2
+    # separator_height = 2
+    separator_height = 4
 
     # Padding between text and separator.
     # padding = 8
-    padding = 10
+    padding = 12
 
     # Horizontal padding.
     # horizontal_padding = 8
-    horizontal_padding = 10
+    horizontal_padding = 12
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    # frame_width = 3
+    frame_width = 5
 
     # Defines color of the frame around the notification window.
     # frame_color = "#aaaaaa"
@@ -101,7 +103,7 @@
     ### Text ###
 
     # font = Monospace 8
-    font = Ubuntu 11
+    font = Ubuntu 12
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -141,7 +143,8 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b>%s</b>\n%b"
+    # format = "<b>%s</b>\n%b"
+    format = "<span size='large' font_desc='Ubuntu 11' weight='bold' foreground='#88C0D0'>%s</span>\n<span font_desc='Ubuntu 11'>%b</span>"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -187,14 +190,14 @@
     # for e.g. small files or high-dpi screens. In case of conflict,
     # max_icon_size takes precedence over this.
     # min_icon_size = 0
-    min_icon_size = 32
+    min_icon_size = 40
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 32
+    max_icon_size = 40
 
     # Paths to default icons.
     # icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-    icon_path = /usr/share/icons/Papirus-Dark/48x48/actions/:/usr/share/icons/Papirus-Dark/48x48/apps/:/usr/share/icons/Papirus-Dark/48x48/categories/:/usr/share/icons/Papirus-Dark/48x48/devices/:/usr/share/icons/Papirus-Dark/48x48/emblems/:/usr/share/icons/Papirus-Dark/48x48/emotes/:/usr/share/icons/Papirus-Dark/48x48/mimetypes/:/usr/share/icons/Papirus-Dark/48x48/places/:/usr/share/icons/Papirus-Dark/48x48/status/:/usr/share/icons/Papirus-Dark/symbolic/actions:/usr/share/icons/Papirus-Dark/symbolic/apps:/usr/share/icons/Papirus-Dark/symbolic/categories:/usr/share/icons/Papirus-Dark/symbolic/devices:/usr/share/icons/Papirus-Dark/symbolic/devices:/usr/share/icons/Papirus-Dark/symbolic/emblems:/usr/share/icons/Papirus-Dark/symbolic/emotes:/usr/share/icons/Papirus-Dark/symbolic/mimetypes:/usr/share/icons/Papirus-Dark/symbolic/status
+    icon_path = /usr/share/icons/Papirus-Dark/48x48/actions/:/usr/share/icons/Papirus-Dark/48x48/apps/:/usr/share/icons/Papirus-Dark/48x48/categories/:/usr/share/icons/Papirus-Dark/48x48/devices/:/usr/share/icons/Papirus-Dark/48x48/emblems/:/usr/share/icons/Papirus-Dark/48x48/emotes/:/usr/share/icons/Papirus-Dark/48x48/mimetypes/:/usr/share/icons/Papirus-Dark/48x48/places/:/usr/share/icons/Papirus-Dark/48x48/status/:/usr/share/icons/Papirus-Dark/symbolic/status
 
     ### History ###
 
@@ -303,21 +306,21 @@
     context = mod4+shift+period
 
 [urgency_low]
-    background = "#272727"
-    foreground = "#FFFFFF"
-    frame_color = "#5D5D5D"
+    background = "#2E3440"
+    foreground = "#ECEFF4"
+    frame_color = "#5F6B85"
     timeout = 5
 
 [urgency_normal]
-    background = "#272727"
-    foreground = "#FFFFFF"
-    frame_color = "#5D5D5D"
+    background = "#2E3440"
+    foreground = "#ECEFF4"
+    frame_color = "#5F6B85"
     timeout = 5
 
 [urgency_critical]
-    background = "#272727"
-    foreground = "#FFFFFF"
-    frame_color = "#5D5D5D"
+    background = "#993E47"
+    foreground = "#ECEFF4"
+    frame_color = "#BF616A"
     timeout = 0
 
 [low_power]
@@ -338,6 +341,11 @@
 [discharging]
     summary = "Power Manager"
     body = "*is discharging*"
+    script = ~/.config/dunst/scripts/discharging
+
+[power]
+    summary = "Power Manager"
+    body = "*is running on *power*"
     script = ~/.config/dunst/scripts/discharging
 
 [critical]
