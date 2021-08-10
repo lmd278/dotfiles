@@ -14,7 +14,7 @@ configuration {
     show-icons: true;
     icon-theme: "Papirus-Dark";
     window-format: "{c}\t{t}";
-    theme: "nord";
+    theme: "themes/dark.rasi";
     kb-remove-to-eol: "";
     kb-accept-entry: "Control+m,Return,KP_Enter";
     kb-row-up: "Up,Control+p,ISO_Left_Tab,Control+k";

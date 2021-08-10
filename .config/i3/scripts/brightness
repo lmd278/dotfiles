@@ -14,7 +14,7 @@ notify() {
         icon_name="display-brightness-high-symbolic"
     fi
     
-    exec dunstify -r 100 -i "$icon_name" "Display" "Brightness: $BRIGHTNESS%"
+    exec dunstify -r 100 -i "$icon_name" "Display" "Brightness: $BRIGHTNESS%" -h int:value:"$BRIGHTNESS"
 }
 
 case "$1" in

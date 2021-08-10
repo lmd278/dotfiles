@@ -33,7 +33,6 @@ exec --no-startup-id redshift
 exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id volumeicon
 exec --no-startup-id xfce4-power-manager
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # #---The look and feel---# #
 
@@ -74,34 +73,40 @@ gaps outer $outer_gaps
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 
-# Theme colors
-set $color00 #2E3440
-set $color01 #3B4252
-set $color02 #434C5E
-set $color03 #4C566A
-set $color04 #D8DEE9
-set $color05 #E5E9F0
-set $color06 #ECEFF4
-set $color07 #8FBCBB
-set $color08 #88C0D0
-set $color09 #81A1C1
-set $color10 #5E81AC
-set $color11 #BF616A
-set $color12 #D08770
-set $color13 #EBCB8B
-set $color14 #A3BE8C
-set $color15 #B48EAD
-set $color16 #57637A
-set $color17 #8A95AB
-set $color18 #A1BCD7
-set $color19 #B8CCE1
-
 # Window decorations
-# class                   border   backgro. text     indicat. child_border
-  client.focused          $color19 $color18 $color01 $color13
-  client.focused_inactive $color00 $color01 $color18 $color13
-  client.unfocused        $color00 $color01 $color18 $color13
-  client.urgent           $color12 $color11 $color06 $color13
+# class                 border  backgr. text    indica. child_border
+client.focused          #4C7899 #285577 #FFFFFF #2E9EF4
+client.focused_inactive #333333 #5F676A #FFFFFF #484E50
+client.unfocused        #333333 #222222 #888888 #292D2E
+client.urgent           #BF616A #900000 #ECEFF4 #900000
+
+# Start i3bar to display a workspace bar (plus the system information i3status if available)
+bar {
+    i3bar_command i3bar
+    status_command i3status
+    position top
+
+    # Please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+    # tray_output primary
+    # tray_output eDP1
+
+    bindsym button4 nop
+    bindsym button5 nop
+    # font pango:Ubuntu Regular 11
+    # strip_workspace_numbers yes
+
+    colors {
+        background #272727
+        statusline #FFFFFF
+        separator  #666666
+
+        focused_workspace  #4C7899 #285577 #FFFFFF
+        active_workspace   #333333 #222222 #FFFFFF
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #BF616A #900000 #FFFFFF
+        binding_mode       #BF616A #900000 #FFFFFF
+  }
+}
 
 # #---Letter key bindings---# #
 
@@ -300,7 +305,7 @@ bindsym $mod+Return          exec --no-startup-id $terminal
 # bindsym $mod+Shift+Return
 
 bindsym $mod+slash           exec --no-startup-id rofi -show drun
-bindsym $mod+Shift+slash     exec --no-startup-id rofi -show window
+# bindsym $mod+Shift+slash
 
 bindsym $mod+space           focus mode_toggle
 bindsym $mod+Shift+space     floating toggle
