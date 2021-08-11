@@ -12,6 +12,7 @@ message/rfc822=userapp-Thunderbird.desktop
 application/pdf=atril.desktop
 application/x-bittorrent=transmission-gtk.desktop
 application/vnd.debian.binary-package=gnome-software-local-file.desktop
+x-scheme-handler/msteams=teams.desktop
 
 [Added Associations]
 text/html=google-chrome.desktop
