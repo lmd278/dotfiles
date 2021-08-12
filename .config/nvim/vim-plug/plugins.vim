@@ -13,8 +13,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 if exists('g:vscode')
     " Text navigation
-    " Plug 'asvetliakov/vim-easymotion'
-    Plug 'ChristianChiarulli/vscode-easymotion'
+    Plug 'asvetliakov/vim-easymotion', { 'as': 'vscode-easymotion' }
     " Make the yanked region apparent
     Plug 'machakann/vim-highlightedyank'
 else
