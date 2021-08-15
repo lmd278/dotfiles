@@ -12,7 +12,7 @@
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+        . "$HOME/.bashrc"
     fi
 fi
 
@@ -26,8 +26,15 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Define environment variables
-export BROWSER=/usr/bin/google-chrome-stable
-export EDITOR=/usr/local/bin/nvim
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
-export QT_QPA_PLATFORMTHEME=qt5ct
+# Default apps
+export PAGER="less"
+export EDITOR="nvim"
+export VISUAL="nvim"
+export BROWSER="google-chrome-stable"
+
+# Fix QT theming
+export QT_QPA_PLATFORMTHEME="qt5ct"
+
+# Better MIME types
+XDG_CONFIG_DIRS="/etc/xdg/xdg-xubuntu:$XDG_CONFIG_DIRS"
+XDG_DATA_DIRS="/usr/share/xubuntu:/usr/share/xfce4:$XDG_DATA_DIRS"
