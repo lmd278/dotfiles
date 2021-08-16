@@ -1,6 +1,7 @@
 {
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
     "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
+    "workbench.list.automaticKeyboardNavigation": false,
     "code-runner.runInTerminal": true,
     "editor.lineNumbers": "relative",
     "workbench.colorTheme": "Nord Deep",

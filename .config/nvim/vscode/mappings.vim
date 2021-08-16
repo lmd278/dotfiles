@@ -46,6 +46,10 @@ nmap gc  <Plug>VSCodeCommentary
 omap gc  <Plug>VSCodeCommentary
 nmap gcc <Plug>VSCodeCommentaryLine
 
+" Go to references
+nnoremap gr <Cmd>call VSCodeNotify('editor.action.goToReferences')<CR>
+xnoremap gr <Cmd>call VSCodeNotify('editor.action.goToReferences')<CR>
+
 " Movement over folds
 nmap j gj
 nmap k gk
