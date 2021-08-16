@@ -4,7 +4,6 @@ nnoremap <Space> <Nop>
 
 " I hate escape more than anything else
 inoremap jk <Esc>
-inoremap kj <Esc>
 
 " Move up and down in autocomplete
 inoremap <expr> <C-j> ("\<C-n>")
@@ -36,4 +35,4 @@ nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<CR>
 
 " No highlight
-nnoremap <leader>n :let @/ = ""<CR>
+nnoremap <leader>n :nohlsearch<CR>
