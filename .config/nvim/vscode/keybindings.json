@@ -41,23 +41,23 @@
         "when": "panelFocus"
     },
     {
+        "key": "ctrl+j",
         "command": "list.focusDown",
-        "key": "ctrl+j",
         "when": "listFocus && !inputFocus"
     },
     {
-        "command": "list.focusUp",
         "key": "ctrl+k",
+        "command": "list.focusUp",
         "when": "listFocus && !inputFocus"
     },
     {
-        "command": "showNextParameterHint",
         "key": "ctrl+j",
+        "command": "showNextParameterHint",
         "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
     },
     {
-        "command": "showPrevParameterHint",
         "key": "ctrl+k",
+        "command": "showPrevParameterHint",
         "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
     },
     {
@@ -71,23 +71,23 @@
         "when": "textInputFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
     {
+        "key": "ctrl+j",
         "command": "workbench.action.quickOpenSelectNext",
-        "key": "ctrl+j",
         "when": "inQuickOpen"
     },
     {
-        "command": "workbench.action.quickOpenSelectPrevious",
         "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
     },
     {
-        "command": "vscode-neovim.history-down-cmdline",
         "key": "ctrl+j",
+        "command": "vscode-neovim.history-down-cmdline",
         "when": "neovim.mode == cmdline_normal"
     },
     {
-        "command": "vscode-neovim.history-up-cmdline",
         "key": "ctrl+k",
+        "command": "vscode-neovim.history-up-cmdline",
         "when": "neovim.mode == cmdline_normal"
     },
     {
