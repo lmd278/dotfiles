@@ -25,7 +25,7 @@ set $outer_gaps -2
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/libexec/geoclue-2.0/demos/agent
 exec --no-startup-id blueman-applet
-exec --no-startup-id copyq
+exec --no-startup-id diodon
 exec --no-startup-id ibus-daemon -drx
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id nm-applet
@@ -122,7 +122,7 @@ bindsym $mod+t          exec --no-startup-id pkill picom
 bindsym $mod+Shift+t    exec --no-startup-id picom -b
 
 bindsym $mod+y          border pixel $borders
-bindsym $mod+Shift+y    exec --no-startup-id copyq toggle
+# bindsym $mod+Shift+y
 
 bindsym $mod+u          border none
 bindsym $mod+Shift+u    [urgent=latest] focus
