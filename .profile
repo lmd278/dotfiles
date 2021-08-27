@@ -32,8 +32,9 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="google-chrome-stable"
 
-# Fix QT theming
+# Fix theming
 export QT_QPA_PLATFORMTHEME="qt5ct"
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 
 # Better MIME types
 XDG_CONFIG_DIRS="/etc/xdg/xdg-xubuntu:$XDG_CONFIG_DIRS"
