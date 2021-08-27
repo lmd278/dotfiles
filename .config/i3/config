@@ -310,7 +310,7 @@ bindsym $mod+Shift+space     floating toggle
 # #---Mode definitions---# #
 
 # Set shut down, restart and locking features
-set $mode_system [l]ock, [e]xit, switch_[u]ser, [s]uspend, [h]ibernate, [r]eboot, [S]hutdown
+set $mode_system system
 
 mode "$mode_system" {
     bindsym l exec --no-startup-id $HOME/.config/i3/scripts/i3exit lock, mode "default"
