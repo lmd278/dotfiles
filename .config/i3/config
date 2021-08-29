@@ -392,7 +392,7 @@ mode "$mode_swap" {
     bindsym $mod+Shift+s unmark "swapee"; mode "default";
 }
 
-# Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Choose 0 to remove gaps or d to reset gaps for current workspace. Press one of + / - (in-/decrement for current workspace), 0 (remove gaps for current workspace), d (reset gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
+# Enter the gap mode
 set $mode_gaps Gaps: [o]uter, [i]nner, [0] gaps, [d]efault
 set $mode_gaps_outer Outer Gaps: [+], [-], [0], [d]
 set $mode_gaps_inner Inner Gaps: [+], [-], [0], [d]
