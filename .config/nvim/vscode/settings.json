@@ -6,15 +6,11 @@
     "editor.lineNumbers": "relative",
     "workbench.colorTheme": "Nord Deep",
     "workbench.colorCustomizations": {
-        "[Nord Deep]": {
-            "editor.selectionBackground": "#5e81ac"
-        }
+        "editorBracketHighlight.foreground1": "#b48ead",
+        "editorBracketHighlight.foreground2": "#ebcb8b",
+        "editorBracketHighlight.foreground3": "#8fbcbb"
     },
-    "bracket-pair-colorizer-2.colors": [
-        "terminal.ansiBrightMagenta",
-        "terminal.ansiYellow",
-        "terminal.ansiBrightCyan"
-    ],
+    "editor.bracketPairColorization.enabled": true,
     "editor.fontFamily": "'FiraCode Nerd Font'",
     "editor.fontLigatures": true
 }
