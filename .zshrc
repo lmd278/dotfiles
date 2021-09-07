@@ -116,7 +116,6 @@ ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
 
 # This zvm_after_init function will be auto executed by zsh-vi-mode
 zvm_after_init() {
-    # Enable fzf
     [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 }
 
