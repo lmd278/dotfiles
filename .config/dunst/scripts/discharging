@@ -1,4 +1,0 @@
-#!/bin/sh
-# $HOME/.config/dunst/scripts/discharging
-
-paplay $HOME/.config/dunst/sounds/device-removed.wav

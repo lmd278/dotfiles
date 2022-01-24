@@ -1,4 +1,0 @@
-#!/bin/sh
-# $HOME/.config/dunst/scripts/critical
-
-paplay $HOME/.config/dunst/sounds/dialog-warning.wav

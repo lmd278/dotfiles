@@ -1,4 +1,0 @@
-#!/bin/sh
-# $HOME/.config/dunst/scripts/charging
-
-paplay $HOME/.config/dunst/sounds/device-added.wav

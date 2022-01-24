@@ -1,4 +1,0 @@
-#!/bin/sh
-# $HOME/.config/dunst/scripts/full
-
-paplay $HOME/.config/dunst/sounds/battery-low.wav
