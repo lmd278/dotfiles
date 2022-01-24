@@ -72,6 +72,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  command_not_found
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-vi-mode
@@ -106,9 +107,6 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Enable apt package suggestions
-source /etc/zsh_command_not_found
-
 # Better vi-mode
 ZVM_VI_EDITOR=nvim
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
@@ -128,6 +126,3 @@ bindkey -M menuselect 'l' vi-forward-char
 # Set rg as the default source for fzf
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-# Shell completions for Alacritty
-fpath+=${ZDOTDIR:-~}/.zsh_functions
