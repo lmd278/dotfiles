@@ -72,7 +72,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  command_not_found
+  command-not-found
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-vi-mode
